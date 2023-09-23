@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeatStock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+
+</head>
+
+
+<body>
+<!--  ********************    HEADER     ************ -->
+     <logo><a href="index.html">SeatStock</a></logo>
+     <loginButton><a href="signin.html">Sign In</a></loginButton>
+     <faqButton><a href="FAQ.html">How it Works</a></faqButton>
+    
+
+
+
+ 
+<!--  ***********************   BODY     *********** -->
+
+  
+
+<div class="sell-body">
+    <div class="sell-game-title" id="sell-game-title"></div><br>
+    <form id="sell-Ticket" class="stuff" method="post">
+        
+        <br>
+        <img src="stadiumicon.png" class="buy-stadium-icon"><br><br> <br>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+
+
+
+
+    <script>
+        const game = new URLSearchParams(window.location.search).get("game");
+        console.log(game);
+        const game_title = document.getElementById("sell-game-title");
+        if (game === "iowavmichiganst") {
+            game_title.textContent = "Iowa vs Michigan State"
+        } else if (game === "iowavrutgers") {
+            game_title.textContent = "Iowa vs Rutgers"
+        } else if (game === "iowavpurdue") {
+            game_title.textContent = "Iowa vs Purdue"
+        } else if (game === "iowavminnesota") {
+            game_title.textContent = "Iowa vs Minnesota"
+        }
+   </script>
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+<!--  *******************    FOOTER********************    **** -->
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
