@@ -28,7 +28,23 @@
     
 
     <div class="buy-body">
-        <div class="buy-game-title">Iowa Vs Western Michigan</div>
+        <div class="buy-game-title" id="buy-game-title"></div>
+
+        <script>
+            const game = new URLSearchParams(window.location.search).get("game");
+            console.log(game);
+            const game_title = document.getElementById("buy-game-title");
+            if (game === "iowavmichiganst") {
+                game_title.textContent = "Iowa vs Michigan State"
+            } else if (game === "iowavrutgers") {
+                game_title.textContent = "Iowa vs Rutgers"
+            } else if (game === "iowavpurdue") {
+                game_title.textContent = "Iowa vs Purdue"
+            } else if (game === "iowavminnesota") {
+                game_title.textContent = "Iowa vs Minnesota"
+            }
+       </script>
+
         <div class="buy-game-info">Sat Sep 30, Time TBD · Kinnick Stadium, Iowa City, Iowa</div><br>
         <br>
         <img src="icons/stadiumicon.png" class="buy-stadium-icon">

@@ -27,7 +27,7 @@
     <div class="signin-body">
         <div class="form-name"><br>Sign In</div>
         <div class="form-name-subtitle">Log in for secure transactions.</div>
-        <form action="signIn" class="stuff" method="post">
+        <form action="./index.html" class="stuff" method="post">
             <input type="text" placeholder="Email" id="username" name="username" required><br><br>
             <input type="password" placeholder="Password" id="password" name="password" required><br><br>
             <div class="remember-me-container">
@@ -36,7 +36,7 @@
                 <label for="myCheckbox" class="sign-in-checkbox-label">Remember Me</label> </label>
             </div>
             <div class="sign-in-button-container">
-                <button class="sign-in-button">Sign In</button>
+                <button class="sign-in-button" onclick="set_user_signed_in()">Sign In</button>
             </div>
             <a class="sign-up-link" href="signup.html">Sign Up</a>
         </form>
