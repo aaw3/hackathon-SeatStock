@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure---ve)lzpo4*frbw+zylax#h=frp-h5f4sx5*1-pipq&rgfl$k9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['docker-django', 'localhost', 'seatstock.duckdns.org']
 
 
 # Application definition
@@ -85,6 +85,10 @@ DATABASES = {
     }
 }
 
+
+ENV_FILE = find_dotenv()
+if ENV_FILE:
+	load_dotenv(ENV_FILE)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
