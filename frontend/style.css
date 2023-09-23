@@ -13,7 +13,7 @@ logo{
     padding-left: 10px;
 }
 
-signinButton, sellButton, faqButton{
+signinButton, faqButton{
     margin: 5px;
     float: right;
     padding: 20px;
@@ -23,10 +23,17 @@ signinButton, sellButton, faqButton{
     border:none;
     padding: 10px 20px;
 }
-loginButton{
-    font-size:15px;
-    float:right;
+
+tixButton{
+    margin: 5px;
+    float: right;
+    padding: 20px;
+    font-size: 17px;
+    color:black;
+    border:none;
+    padding: 10px 5px;
 }
+
 
 a{
     text-decoration: none;
@@ -34,6 +41,10 @@ a{
 }
 logo a{
     color:black;
+}
+tixButton a{
+    color:black;
+    text-decoration: underline;
 }
 
 /**********************   HOME BODY  ****************************/
@@ -386,7 +397,7 @@ input[type=password]{
     padding: 20px; 
     border: 2px solid #000;
     border-radius: 10px;
-    margin-top:130px;
+    margin-top:120px;
     margin-left:10px
 }
 .sell-game-title{
@@ -400,8 +411,9 @@ input[type=password]{
     width: 80px; 
     margin-right: 10px;
 }
-input[type=submit]{
-    background-color: grey
+
+.sumbit-price{
+    font-size: 25px;
 }
 
 
@@ -421,7 +433,7 @@ input[type=submit]{
     padding: 20px; 
     border: 2px solid #000;
     border-radius: 10px;
-    margin-top:130px;
+    margin-top:120px;
     margin-left:10px
 }
 .buy-game-title{
@@ -434,6 +446,14 @@ input[type=submit]{
 .buy-game-info{
     font-size:12px;
     color:#B3B3B3;
+}
+.place-bid-button{
+    font-size: 20px;
+    margin-right:20px;
+    padding-right:10px;
+}
+.buy-button{
+    font-size: 20px;
 }
 .price-box{
     border: 2px solid #000;
@@ -622,7 +642,7 @@ input[type=checkbox]{
     
     
 }
-faqtitles{
+.faqtitles{
     color:rgb(218, 54, 54);
     font-size:20px;
     width:100%;
@@ -644,4 +664,27 @@ faqtitles{
 
 
 
+/*     *****************   TERMS BODY     ************************      */
 
+.terms-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    max-width: 900px;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+/*     *****************   FOOTER     ************************      */
+.footer{
+    height:200px;
+    width:100%;
+    background-color: black;
+    color:white
+}
