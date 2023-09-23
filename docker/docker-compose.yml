@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+  nginx:
+    image: nginx:latest
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ../frontend:/usr/share/nginx/html
+      - ./volumes/config:/usr/share/nginx/html
+
+  docker-django:
+    image: docker-django
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../backend/django:/home/app/webapp
