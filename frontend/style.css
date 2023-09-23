@@ -513,7 +513,10 @@ input[type=submit]{
     display:flex;
     float:right;
 }
-
+.terms-of-service{
+    color:black;
+    text-decoration:underline;
+}
 input[type=checkbox]{
     float:left;
 
