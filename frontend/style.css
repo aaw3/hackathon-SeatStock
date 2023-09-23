@@ -123,6 +123,7 @@ border-radius: 20px;
 .game-window-title{
     font-size: 30px;
     padding:10px;
+    padding-left: 50px;
 }
 
 .game-window-image{
@@ -140,6 +141,7 @@ border-radius: 20px;
     border:none;
     padding: 20px 20px;
     border-radius: 5px;
+    margin-left: 35px;
 }
 .sell-home{
     margin: 5px;
@@ -267,7 +269,7 @@ display: flex;
 flex-direction: column;
 margin-top:100px;
 height: 650px;
-width: 400px;
+width: 500px;
 padding: 20px; 
 border: 2px solid #000;
 border-radius: 10px;
@@ -327,6 +329,7 @@ input[type=password]{
     display: flex;
     flex-direction: row;
     align-items: center; 
+   
 }
 .terms-checkbox{
     display:flex;
@@ -354,15 +357,7 @@ input[type=password]{
     border-radius: 20px;
     
 }
-.sign-up-link{
-    padding-top:15px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    color:black;
-    text-decoration: underline;
 
-}
 
 
 
