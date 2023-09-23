@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta cahrset="UTF-8">
+        <meta charset="UTF-8">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>SeatStock</title>
         <link rel="stylesheet" href="style.css">
-        
+        <script type="text/javascript" src="./script.js"></script>
+
 
     </head>
     <body>
@@ -46,7 +47,7 @@
         <div class="box">
             <img src="iowavmichiganst.png" class="game-window-image">
             <div class="game-window-title">Iowa Vs. Michigan St</div><br>
-            <a href="buy.html" class="buy-or-bid">Buy $55 or Bid</a>
+            <button class="buy-or-bid" onclick="check_sign_in('iowavmichiganst')">Buy $55 or Bid</a>
             <a href="sell.html?game=iowavmichiganst" class="sell-home">Sell</a> <br><br><br>
             <marketData><a href="https://www.example.com">Market Data</a></marketData>
 
@@ -60,7 +61,7 @@
         <div class="box">
             <img src="iowavpurdue.png" class="game-window-image">
             <div class="game-window-title">Iowa Vs. Purdue</div>
-            <button class="buy-or-bid">Buy $25<br>or Bid</button>
+            <button class="buy-or-bid" onclick="check_sign_in('iowavpurdue')">Buy $25<br>or Bid</button>
             <a href="sell.html?game=iowavpurdue" class="sell-home">Sell</a> <br>
             <marketData><a href="https://www.example.com">Market Data</a></marketData>
         </div>
@@ -68,7 +69,7 @@
             
             <img src="iowavminnesota.png" class="game-window-image">
             <div class="game-window-title">Iowa Vs. Minnesota</div>
-            <button class="buy-or-bid">Buy $45<br>or Bid</button>
+            <button class="buy-or-bid" onclick="check_sign_in('iowavminnesota')">Buy $45<br>or Bid</button>
             <a href="sell.html?game=iowavminnesota" class="sell-home">Sell</a> <br><br>
             <marketData><a href="https://www.example.com">Market Data</a></marketData>
         
@@ -76,7 +77,7 @@
         <div class="box">
             <img src="iowavrutgers.png" class="game-window-image">
             <div class="game-window-title">Iowa Vs Rutgers</div>
-            <button class="buy-or-bid">Buy $20<br>or Bid</button>
+            <button class="buy-or-bid" onclick="check_sign_in('iowavrutgers')">Buy $20<br>or Bid</button>
             <a href="sell.html?game=iowavrutgers" class="sell-home">Sell</a> <br><br>
             <marketData><a href="https://www.example.com">Market Data</a></marketData>
         </div>
