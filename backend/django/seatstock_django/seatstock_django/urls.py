@@ -21,8 +21,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",include('django_mongo.urls')), 
-#    path("", views.index, name="index"),
+#    path("",include('django_mongo.urls')), 
+    path("", views.index, name="index"),
     path("login", views.login, name="login"),
     path("logout", views.logout, name="logout"),
     path("callback", views.callback, name="callback"),

@@ -1,2 +1,3 @@
 docker/.env
 backend/django/seatstock_django/db.sqlite3
+docker/volumes/postgresql

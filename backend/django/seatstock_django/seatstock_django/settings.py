@@ -14,6 +14,24 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv, find_dotenv
 
+# Needed to use mongodb as default 'DATABASES'
+#import mongoengine, djongo
+#from pymongo.mongo_client import MongoClient
+#from pymongo.server_api import ServerApi
+
+ENV_FILE = find_dotenv()
+if ENV_FILE:
+	load_dotenv(ENV_FILE)
+
+#MONGO_DB_USERNAME = os.environ.get("MONGO_DB_USERNAME")
+#MONGO_DB_PASSWORD = os.environ.get("MONGO_DB_PASSWORD")
+#MONGO_DB_HOST = os.environ.get("MONGO_DB_HOST")
+
+#uri = 'mongodb+srv://'+MONGO_DB_USERNAME+':'+MONGO_DB_PASSWORD+'@'+MONGO_DB_HOST+'/?retryWrites=true&w=majority'
+#mongoengine.connect(db="default", host=uri)
+#client = MongoClient(uri)
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -33,7 +51,7 @@ ALLOWED_HOSTS = ['docker-django', 'localhost', 'seatstock.duckdns.org']
 # Application definition
 
 INSTALLED_APPS = [
-    'djangoapp',
+    'django_mongo',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -88,9 +106,35 @@ WSGI_APPLICATION = 'seatstock_django.wsgi.application'
 #}
 
 
-ENV_FILE = find_dotenv()
-if ENV_FILE:
-	load_dotenv(ENV_FILE)
+#DATABASES = {
+#    'default': {
+#        'ENGINE' : 'djongo',
+#        'NAME' : 'seatstock',
+#        'ENFORCE_SCHEMA': False,
+#        'CLIENT': {
+#            'host': "mongodb+srv://seatstock:3MSiYdBhf43gPvBa@cluster0.7s1vitu.mongodb.net/?retryWrites=true&w=majority"
+#        }
+#    }
+#}
+
+DB_NAME = os.environ.get("DB_NAME")
+DB_USER = os.environ.get("DB_USER")
+DB_PASSWORD = os.environ.get("DB_PASSWORD")
+DB_HOST = os.environ.get("DB_HOST")
+DB_PORT = os.environ.get("DB_PORT")
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': DB_NAME,
+        'USER': DB_USER,
+        'PASSWORD': DB_PASSWORD,
+        'HOST': DB_HOST,
+        'PORT': DB_PORT
+    }
+}
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
