@@ -26,5 +26,7 @@ urlpatterns = [
     path("login", views.login, name="login"),
     path("logout", views.logout, name="logout"),
     path("callback", views.callback, name="callback"),
-
+    path("tickets", views.tickets, name="tickets"),
+    path("market", views.marketdata, name="marketdata"),
+    path("FAQ", views.FAQ, name="FAQ")
 ]

@@ -47,6 +47,33 @@ def index(request):
         "index.html",
         context={
             "session": request.session.get("user"),
-            "pretty": json.dumps(request.session.get("user"), indent=4),
+            #"pretty": json.dumps(request.session.get("user"), indent=4),
         },
+    )
+
+def tickets(request):
+    return render(
+        request,
+        "tickets.html",
+        context={
+            "session": request.session.get("user"),
+        }
+    )
+
+def marketdata(request):
+    return render(
+        request,
+        "marketdata.html",
+        context={
+            "session": request.session.get("user"),
+        }
+    )
+
+def FAQ(request):
+    return render(
+        request,
+        "FAQ.html",
+        context={
+            "session": request.session.get("user"),
+        }
     )

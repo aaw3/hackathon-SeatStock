@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SeatStock</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js"></script>
     <link rel="icon" type="image/png" href="static/favicon.png" sizes="32x32">
     <link rel="icon" type="image/vnd.microsoft.icon" href="static/favicon.ico" sizes="16x16">
 
@@ -17,14 +17,14 @@
 <body>
 
     <!--  ****    HEADER ********************    **** -->
-    <logo><a href="index.html">SeatStock</a></logo>
+    <logo><a href="/">SeatStock</a></logo>
     {% if session %}
     <signinButton><a href="logout">({{ session.userinfo.name }}) Sign Out</a></signinButton>
     {% else %}
     <signinButton><a href="login">Sign In</a></signinButton>
     {% endif %}
-    <faqButton><a href="static/FAQ.html">How it Works</a></faqButton>
-    <tixButton><a href="tickets.html">Your Tickets</a></tixButton>
+    <faqButton><a href="FAQ.html">How it Works</a></faqButton>
+    <tixButton><a href="tickets">Your Tickets</a></tixButton>
 
 <!--  ***************    BODY ********************    **** -->
 
@@ -39,7 +39,7 @@
                 <div class="how-it-works-titles">
                     <b>Buying:</b>
                 </div> <br>
-                <img src="icons/buyicon.png" class="icons">
+                <img src="static/icons/buyicon.png" class="icons">
                 <div class="how-it-works-bold"><br><b>Choose your Game</b></div>
                 <div class="how-it-works">
                     Log in with your school email
@@ -48,7 +48,7 @@
                 
                 <br>
 
-                <img src="icons/tagicon.png" class="icons">
+                <img src="static/icons/tagicon.png" class="icons">
                 <div class="how-it-works-bold"><br><b>Find the right price</b></div>
                 <div class="how-it-works">
                 Pay with our SeatStock Guarantee
@@ -56,7 +56,7 @@
 
                 <br>
 
-                <img src="icons/circleicon.png" class="icons">
+                <img src="static/icons/circleicon.png" class="icons">
                 <div class="how-it-works-bold"><br><b>Accept the ticket transfer</b></div>
                 <div class="how-it-works">
                 If you did not recieve your ticket please contact us
@@ -68,7 +68,7 @@
                 <div class="how-it-works-titles">
                     <b>Sell:</b>
                 </div> <br>
-                <img src="icons/selecticon.png" class="icons">
+                <img src="static/icons/selecticon.png" class="icons">
                 <div class="how-it-works-bold"><br><b>List your ticket</b></div>
                 <div class="how-it-works">
                     Or instant sell your ticket
@@ -77,7 +77,7 @@
                 
                 <br>
 
-                <img src="icons/sendicon.png" class="icons">
+                <img src="static/icons/sendicon.png" class="icons">
                 <div class="how-it-works-bold"><br><b>Send your ticket to the buyer</b></div>
                 <div class="how-it-works">
                 Through your school ticket portal
@@ -85,7 +85,7 @@
 
                 <br>
 
-                <img src="icons/recieveicon.png" class="icons">
+                <img src="static/icons/recieveicon.png" class="icons">
                 <div class="how-it-works-bold"><br><b>Get paid</b></div>
                 <div class="how-it-works">
                 After the buyer confirms their ticket
