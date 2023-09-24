@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t docker-django .
+docker build --network=host -t docker-django .

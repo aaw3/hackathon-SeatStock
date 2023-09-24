@@ -1,0 +1,735 @@
+body{
+    background-color: rgb(255,255,255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: auto;
+}
+
+
+
+/**********************   HEADER  ****************************/
+logo{
+    text-align: left;
+    font-size:40px;
+    padding-left: 10px;
+}
+
+signinButton, faqButton{
+    margin: 5px;
+    float: right;
+    padding: 20px;
+    font-size: 15px;
+    background-color: rgb(218,54,54);
+    color:white;
+    border:none;
+    padding: 10px 20px;
+}
+
+tixButton{
+    margin: 5px;
+    float: right;
+    padding: 20px;
+    font-size: 17px;
+    color:black;
+    border:none;
+    padding: 10px 5px;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+logo a{
+    color:black;
+}
+tixButton a{
+    color:black;
+    text-decoration: underline;
+}
+
+/**********************   HOME BODY  ****************************/
+
+.home-info-title1{
+    font-size: 29px;
+    display:flex;
+    justify-content: center;
+    padding-left:30px;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:20px
+}
+
+#searchInput{
+    width:600px;
+    height:35px;
+    margin:0;
+    padding-left:20px;
+    font-size: 20px;
+}
+
+.search-button {
+margin: 5px;
+font-size:15px;
+background-color:rgb(218, 54, 54);
+color:white;
+border:none;
+padding: 10px 20px;
+border-radius: 20px;
+
+
+}
+.home-info-title2{
+    font-size: 29px;
+    padding-top: 50px;
+    display:flex;
+    justify-content: center;
+
+}
+.home-info-title3{
+    font-size: 25px;
+    padding-top: 10px;
+    display:flex;
+    justify-content: center;
+
+}
+
+
+.box {
+    width: 370px; 
+    height: 500px; 
+    margin: 10px; 
+    margin-left: 25px;
+    padding: 20px; 
+    border: 2px solid #000;
+    border-radius: 10px;
+    float: left; 
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+.game-container{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.game-window{
+    height:500px;
+    border: 1px solid black;
+    margin:0 70px;
+    border-radius: 10px;
+    flex:1;
+    text-align: center;
+}
+.game-window-title{
+    font-size: 30px;
+    padding:10px;
+    padding-left: 50px;
+}
+
+.game-window-image{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    
+}
+.buy-or-bid{
+    margin: 5px;
+    font-size:25px;
+    background-color:rgb(218, 54, 54);
+    color:white;
+    border:none;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-left: 35px;
+}
+.sell-home{
+    margin: 5px;
+    font-size:25px;
+    background-color:rgb(218, 54, 54);
+    color:white;
+    border:none;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+marketData a{
+    
+    color:black;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/*     ****************   SIGNIN BODY     ***********************      */
+
+.signin-body{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+flex-direction: column;
+height: 400px;
+width: 400px;
+padding: 20px; 
+border: 2px solid #000;
+border-radius: 10px;
+margin-left:10px
+}
+.form-name{
+    font-size: 35px;
+    padding-left: 20px;
+}
+.form-name-subtitle{
+    font-size:15x;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    color:#B3B3B3;
+}
+.stuff{
+padding-left: 20px;
+padding-top: 20px;
+
+}
+input[type=text]{ /*username*/
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    width: 330px;
+    height: 35px;
+    padding-left: 10px;
+}
+input[type=password]{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color:black;
+    width: 330px;
+    height: 35px;
+    padding-left: 10px;
+    
+}
+.remember-me-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.sign-in-checkbox{
+    display:flex;
+    justify-content: center;  
+   
+}
+.sign-in-checkbox-label{
+    margin-left:5px;
+}
+.sign-in-button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+}
+.sign-in-button{
+    
+    margin-top:15px;
+    padding:20px;
+    font-size:15px;
+    background-color:rgb(218, 54, 54);
+    color:white;
+    border:none;
+    padding: 10px 150px;
+    border-radius: 20px;
+    
+}
+.sign-up-link{
+    padding-top:15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color:black;
+    text-decoration: underline;
+
+}
+
+
+/*     ****************   SIGNUP BODY     ***********************      */
+.signup-body{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+flex-direction: column;
+margin-top:100px;
+height: 650px;
+width: 500px;
+padding: 20px; 
+border: 2px solid #000;
+border-radius: 10px;
+margin-left:10px
+}
+.form-name{
+    font-size: 35px;
+    padding-left: 20px;
+}
+.form-name-subtitle{
+    font-size:15x;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    color:#B3B3B3;
+}
+.stuff{
+padding-left: 20px;
+padding-top: 20px;
+
+}
+input[type=text]{ /*username*/
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    width: 330px;
+    height: 35px;
+    padding-left: 10px;
+}
+input[type=password]{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color:black;
+    width: 330px;
+    height: 35px;
+    padding-left: 10px;
+    
+}
+.promotions-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.promotion-checkbox{
+    display:flex;
+    justify-content: center;  
+   
+}
+.promotion-checkbox-label{
+    margin-left:20px;
+    font-size:15px
+}
+.terms-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+   
+}
+.terms-checkbox{
+    display:flex;
+    justify-content: center;  
+   
+}
+.terms-checkbox-label{
+    margin-left:20px;
+    font-size:15px
+}
+.sign-in-button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+}
+.sign-up-button{
+    
+    margin-top:15px;
+    padding:20px;
+    font-size:15px;
+    background-color:rgb(218, 54, 54);
+    color:white;
+    border:none;
+    padding: 10px 150px;
+    border-radius: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*     ***************   SELL BODY     ************************      */
+.sell-body {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 500px;
+    padding: 20px; 
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-top:120px;
+    margin-left:10px
+}
+.sell-game-title{
+    font-size: 25px;
+}
+
+
+.sell-body label {
+    font-size: 20px;
+    text-align: right; 
+    width: 80px; 
+    margin-right: 10px;
+}
+
+.sumbit-price{
+    font-size: 25px;
+}
+
+
+/*     ***************   BUY BODY     ************************      */
+
+
+.buy-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    width: 500px;
+    padding: 20px; 
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin-top:120px;
+    margin-left:10px
+}
+.buy-game-title{
+    font-size: 30px;
+}
+.buy-stadium-icon{
+    width:250px;
+    height:250px;
+}
+.buy-game-info{
+    font-size:12px;
+    color:#B3B3B3;
+}
+.place-bid-button{
+    font-size: 20px;
+    margin-right:20px;
+    padding-right:10px;
+}
+.buy-button{
+    font-size: 20px;
+}
+.price-box{
+    border: 2px solid #000;
+    border-radius: 10px;
+    height:400px;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    padding-left:20px;
+
+}
+.subtotal{
+    display: flex; /* Create a row layout */
+    justify-content: space-between; 
+    margin-bottom: 5px;
+    padding-top:10px; 
+    padding-right:15px;
+    
+}
+.subtotal-title{
+    font-size: 20px;
+    
+}
+.subtotal-amount {
+    float:right;
+    color:green
+    
+}
+.purchase-price{
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 5px; 
+    padding-right:15px;
+}
+.purchase-price-title{
+    font-size: 15px;
+}
+.purchase-price-amount{
+    float:right;
+    color:black;
+    font-size: 15px;
+}
+.transaction-fee{
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 20px; 
+    margin-bottom: 5px; 
+    padding-right:15px;
+}
+.transaction-fee-title{
+    font-size: 15px;
+}
+.transaction-fee-amount{
+    float:right;
+    color:black;
+    font-size: 15px;
+}
+
+.processing-fee{
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 20px; 
+    padding-right:15px;
+}
+.processing-fee-title{
+    font-size: 15px;
+}
+.processing-fee-amount{
+    float:right;
+    color:black;
+    font-size: 15px;
+}
+.agree-container{
+    display:flex;
+}
+.checkbox-label{
+    display:flex;
+    float:right;
+}
+.terms-of-service{
+    color:black;
+    text-decoration:underline;
+}
+input[type=checkbox]{
+    float:left;
+
+    
+}
+
+
+
+
+
+
+
+/*     ***************   FAQ BODY     ************************      */
+.how-it-works-container{
+    display:flex;
+    justify-content: center;
+}
+.how-it-works-buy{
+    width:50%;
+    padding:20px;
+}
+.how-it-works-sell{
+    width:50%;
+    padding:20px;
+}
+
+.how-it-works-title{
+    color:rgb(218, 54, 54);
+    padding-top:30px;
+    font-size:35px;
+    display:flex;
+    justify-content: center;
+}
+.how-it-works-titles{
+    color:black;
+    padding-top:30px;
+    padding-left: 20px;
+    font-size:35px;
+    display:flex;
+    justify-content: left;
+}
+.icons{
+    float:left;
+    padding:20px;
+    height:40px;
+    width:40px;
+    display:flex;
+}
+.how-it-works-bold{
+    color:black;
+    padding-top:20px;
+    padding-left: 20px;
+    font-size:25px;
+    display:flex;
+    justify-content: left;
+}
+.how-it-works{
+    color:black;
+    padding-left: 20px;
+    font-size:20px;
+    display:flex;
+    justify-content: left;
+}
+.guarantee-icons{
+    padding:20px;
+    height:75px;
+    width:75px;
+    display:flex;
+    
+
+}
+.guarentee-container{
+    display:flex;
+    justify-content:center;
+}
+.guarantee-titles{
+    display:flex;
+    justify-content: center;
+    font-size:30px;
+
+}
+.guarantee-body{
+    display:flex;
+    justify-content: center;
+    font-size:20px;
+    width:400px;
+
+}
+
+
+
+
+.faq-container{
+    display:flex;
+    justify-content: center;
+}
+.faq-header{
+    color:rgb(218, 54, 54);
+    padding-top:30px;
+    font-size:35px;
+    display:flex;
+    justify-content: center;
+    
+    
+}
+.faqtitles{
+    color:rgb(218, 54, 54);
+    font-size:20px;
+    width:100%;
+    max-width:800px;
+    
+}
+.faq-info{
+    padding-left: 20px;
+    font-size:17px;
+    width:850px;
+    line-height:1.4;
+    width:90%;
+    max-width: 900px;
+
+}
+/*     *****************   TICKETS BODY     ************************      */
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+  
+
+  .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+  
+
+  .tab button:hover {
+        background-color: #ddd;
+    }
+  
+
+  .tab button.active {
+        background-color: #ccc;
+    }
+  
+
+  .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*     *****************   TERMS BODY     ************************      */
+
+.terms-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    max-width: 900px;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+/*     *****************   FOOTER     ************************      */
+.footer{
+    height:200px;
+    width:100%;
+    background-color: black;
+    color:white
+}

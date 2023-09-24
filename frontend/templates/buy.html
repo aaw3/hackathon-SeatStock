@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SeatStock</title>
+        <link rel="stylesheet" href="static/style.css">
+        <script src="static/script.js"></script>
+
+
+    </head>
+
+
+    <body>
+    <!--  ********************    HEADER     ************ -->
+        <logo><a href="index.html">SeatStock</a></logo>
+        <signinButton><a href="signin.html">Sign In</a></signinButton>
+        <faqButton><a href="FAQ.html">How it Works</a></faqButton>
+        <tixButton><a href="tickets.html">Your Tickets</a></tixButton>
+
+
+
+    
+    <!--  ***********************   BODY     *********** -->
+
+    
+
+    <div class="buy-body">
+        <div class="buy-game-title" id="buy-game-title"></div>
+
+        <script>
+            const game = new URLSearchParams(window.location.search).get("game");
+            console.log(game);
+            const game_title = document.getElementById("buy-game-title");
+            if (game === "iowavmichiganst") {
+                game_title.textContent = "Iowa vs Michigan State"
+            } else if (game === "iowavrutgers") {
+                game_title.textContent = "Iowa vs Rutgers"
+            } else if (game === "iowavpurdue") {
+                game_title.textContent = "Iowa vs Purdue"
+            } else if (game === "iowavminnesota") {
+                game_title.textContent = "Iowa vs Minnesota"
+            }
+       </script>
+
+        <div class="buy-game-info">Sat Sep 30, Time TBD · Kinnick Stadium, Iowa City, Iowa</div><br>
+        <br>
+        <img src="static/icons/stadiumicon.png" class="buy-stadium-icon">
+        <br><br>
+        <div class="buy-bid-button-container">
+            <button class="place-bid-button">Bid</button>
+            <button class="buy-button">Buy</button>
+
+        </div>
+        <div class="bid-container">
+            <form id="sell-Ticket" class="stuff" method="post">
+                <input type="text" id="bid" placeholder="Bid Amount"name="price" required>
+            </form>
+        
+        </div>
+        <br>
+        <div class="price-box">
+            <div class="subtotal">
+                <div class="subtotal-title">Subtotal</div>
+                <div class="subtotal-amount">$36.13</div>
+            </div>
+            <div class="purchase-price">
+                <div class="purchase-price-title">Purchase Price</div>
+                <div class="purchase-price-amount">$32.00</div>
+            </div>
+            <div class="transaction-fee">
+                <div class="transaction-fee-title">Transaction Fee (10%)</div>
+                <div class="transaction-fee-amount">+$3.20</div>
+            </div>
+            <div class="processing-fee">
+                <div class="purchase-price-title">Processing Fee</div>
+                <div class="purchase-price-amount">+$0.93</div> 
+            </div>
+
+            
+        </div>  
+        <br><br>
+        <div class="agree-container">
+            <label for="myCheckbox" class="checkbox-label">I agree to the</label>&nbsp;
+            <a href="static/termsofservice.html" class="terms-of-service">Terms of Service</a>
+            <input type="checkbox" id="myCheckbox" name="myCheckbox">
+        
+        </div>
+        
+        
+
+
+
+        
+        
+
+
+    </div>
+
+<!--  *******************    FOOTER********************    **** -->
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
+        <footer>
+            <p>&copy; 2023 SeatStock V. All rights reserved. </p>
+        </footer>
+        
+
+
+
+
+
+    </body>
+</html>
