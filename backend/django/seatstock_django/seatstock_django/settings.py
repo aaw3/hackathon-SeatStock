@@ -51,7 +51,7 @@ ALLOWED_HOSTS = ['docker-django', 'localhost', 'seatstock.duckdns.org']
 # Application definition
 
 INSTALLED_APPS = [
-    'django_mongo',
+#    'django_mongo',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
