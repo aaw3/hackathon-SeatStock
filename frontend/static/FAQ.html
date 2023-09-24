@@ -17,11 +17,15 @@
 <body>
 
     <!--  ****    HEADER ********************    **** -->
-        <logo><a href="index.html">SeatStock</a></logo>
-        <signinButton><a href="login">Sign In</a></signinButton>
-        <faqButton><a href="static/FAQ.html">How it Works</a></faqButton>
-        <tixButton><a href="tickets.html">Your Tickets</a></tixButton>
-        
+    <logo><a href="index.html">SeatStock</a></logo>
+    {% if session %}
+    <signinButton><a href="logout">({{ session.userinfo.name }}) Sign Out</a></signinButton>
+    {% else %}
+    <signinButton><a href="login">Sign In</a></signinButton>
+    {% endif %}
+    <faqButton><a href="static/FAQ.html">How it Works</a></faqButton>
+    <tixButton><a href="tickets.html">Your Tickets</a></tixButton>
+
 <!--  ***************    BODY ********************    **** -->
 
         <br><br>
@@ -73,7 +77,7 @@
                 
                 <br>
 
-                <img src="static/icons/sendicon.png" class="icons">
+                <img src="icons/sendicon.png" class="icons">
                 <div class="how-it-works-bold"><br><b>Send your ticket to the buyer</b></div>
                 <div class="how-it-works">
                 Through your school ticket portal
@@ -81,7 +85,7 @@
 
                 <br>
 
-                <img src="static/icons/recieveicon.png" class="icons">
+                <img src="icons/recieveicon.png" class="icons">
                 <div class="how-it-works-bold"><br><b>Get paid</b></div>
                 <div class="how-it-works">
                 After the buyer confirms their ticket
