@@ -36,24 +36,67 @@
             <button class="tablinks" onclick="openTab(event, 'History')">History</button>
           </div>
 
-         <div id="Tickets" class="tabcontent">
-             <h3>London</h3>
-             <p>London is the capital city of England.</p>
-         </div>
-
-         <div id="Active-Bids" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p> 
-         </div>
-
-         <div id="Active-Asks" class="tabcontent">
-             <h3>Tokyo</h3>
-             <p>Tokyo is the capital of Japan.</p>
-         </div>
-         <div id="History" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-        </div>
+          <div id="Tickets" class="tabcontent">
+            <div class="tickets-container">
+              <div class="ticket">
+                <p class="ticket_title">Iowa vs Purdue</p>
+                <p class="ticket_date">September 30, 2023</p>
+                <p class="ticket_id">N65X-HTRM-675B-HT98</p>
+                <img class="ticket_img" src="../static/sample_barcode.gif">
+             </div>
+             <div class="ticket">
+              <p class="ticket_title">Iowa vs Minnesota</p>
+              <p class="ticket_date">October 7, 2023</p>
+              <p class="ticket_id">N65X-HTRM-675B-HT98</p>
+              <img class="ticket_img" src="../static/sample_barcode.gif">
+           </div>
+            </div>
+           </div>
+  
+           <div id="Active-Bids" class="tabcontent">
+            <div class="active-bids-container">
+              <div class="active-bids-header">
+                <p class="active-bids-header-user">User</p>
+                <p class="active-bids-header-offer">Offer</p>
+                <p class="active-bids-header-ticket">Ticket</p>
+              </div>
+              <div class="bids-row">
+                <p class="bids-row-user">Joe Doe</p>
+                <p class="bids-row-offer">$45</p>
+                <p class="bids-row-ticket">Iowa vs Minnesota</p>
+              </div>
+              <div class="bids-row">
+                <p class="bids-row-user">Jane Smith</p>
+                <p class="bids-row-offer">$50</p>
+                <p class="bids-row-ticket">Iowa vs Minnesota</p>
+              </div>
+              <div class="bids-row">
+                <p class="bids-row-user">Alex Smith</p>
+                <p class="bids-row-offer">$70</p>
+                <p class="bids-row-ticket">Iowa vs Purdue</p>
+              </div>
+            </div>
+           </div>
+  
+           <div id="Active-Asks" class="tabcontent">
+               <div class="active-asks-container">
+                <div class="active-asks-header">
+                  <p class="active-asks-header-user">Ticket</p>
+                  <p class="active-asks-header-offer">Ask</p>
+                </div>
+                <div class="asks-row">
+                  <p class="asks-row-ticket">Iowa vs Minnesota</p>
+                  <p class="asks-row-ask">$55</p>
+                </div>
+                <div class="asks-row">
+                  <p class="asks-row-ticket">Iowa vs Purdue</p>
+                  <p class="asks-row-ask">$50</p>
+                </div>
+               </div>
+           </div>
+           <div id="History" class="tabcontent">
+              <p>No previous transactions</p>
+          </div>
           
 
 

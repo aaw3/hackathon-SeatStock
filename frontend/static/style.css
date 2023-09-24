@@ -695,6 +695,76 @@ input[type=checkbox]{
         border-top: none;
     }
 
+    .tickets-container {
+        display: flex;
+    }
+    .ticket {
+        width: 400px;
+        height: 400px;
+        border: 1px solid black;
+        border-radius:5%;
+        padding: 10px;
+        margin: 20px;
+    }
+    .ticket img {
+        max-width: 100%;
+        padding-top: 50px;
+    }
+    .ticket p {
+        text-align: center;
+    }
+    .ticket_title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .active-bids-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .active-bids-header {
+        border-bottom: 1px solid black;
+    }
+    .active-bids-header, .bids-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px 0;
+    }
+    .active-bids-header p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .active-bids-header p, .bids-row p {
+        flex: 1;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .active-asks-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .active-asks-header {
+        border-bottom: 1px solid black;
+    }
+    .active-asks-header, .asks-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px 0;
+    }
+    .active-asks-header p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .active-asks-header p, .asks-row p {
+        flex: 1;
+        text-align: center;
+        padding: 5px;
+    }
 
 
 
