@@ -77,3 +77,13 @@ def FAQ(request):
             "session": request.session.get("user"),
         }
     )
+
+def account_session_data(request):
+    return render(
+        request,
+        "account_session_data.html",
+        context={
+            "session": request.session.get("user"),
+            "pretty": json.dumps(request.session.get("user"), indent=4),
+        },
+    )
