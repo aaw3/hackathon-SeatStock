@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['docker-django', 'localhost', 'seatstock.duckdns.org']
 # Application definition
 
 INSTALLED_APPS = [
+    'djangoapp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -79,12 +80,12 @@ WSGI_APPLICATION = 'seatstock_django.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
 
 
 ENV_FILE = find_dotenv()
