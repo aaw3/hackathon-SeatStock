@@ -2,6 +2,13 @@
 <html lang="en">
 
 
+{% if session %}
+
+{% else %}
+<script>window.onload = function() { window.location.href="login"}</script>
+
+{% endif %}
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +45,8 @@
         <script>
             const game = new URLSearchParams(window.location.search).get("game");
             console.log(game);
-            const game_title = document.getElementById("buy-game-title");
+            const game_title = document.getElementById("game-window-title");
+            
             if (game === "iowavmichiganst") {
                 game_title.textContent = "Iowa vs Michigan State"
             } else if (game === "iowavrutgers") {
