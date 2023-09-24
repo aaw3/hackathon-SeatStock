@@ -55,11 +55,12 @@ ROOT_URLCONF = 'seatstock_django.urls'
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = os.path.join(BASE_DIR, "seatstock_django", "templates")
+STATIC_DIR = os.path.join(BASE_DIR, "seatstock_django", "static")
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_DIR],
+        'DIRS': [TEMPLATE_DIR, STATIC_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
