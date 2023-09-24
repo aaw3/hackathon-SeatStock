@@ -29,5 +29,7 @@ urlpatterns = [
     path("tickets", views.tickets, name="tickets"),
     path("market", views.marketdata, name="marketdata"),
     path("FAQ", views.FAQ, name="FAQ"),
-    path("account_session_data", views.account_session_data, name="account_session_data")
+    path("account_session_data", views.account_session_data, name="account_session_data"),
+    path("buy", views.buy, name="buy"),
+    path("sell", views.sell, name="sell")
 ]

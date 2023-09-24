@@ -87,3 +87,21 @@ def account_session_data(request):
             "pretty": json.dumps(request.session.get("user"), indent=4),
         },
     )
+
+def buy(request):
+    return render(
+        request,
+        "buy.html",
+        context={
+            "session": request.session.get("user"),
+        },
+    )
+
+def sell(request):
+    return render(
+        request,
+        "sell.html",
+        context={
+            "session": request.session.get("user"),
+        },
+    )
