@@ -722,16 +722,52 @@ input[type=checkbox]{
 
 /*     *****************   FOOTER     ************************      */
 .market-data-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
     width:90%;
     max-width: 900px;
     padding-left: 20px;
 }
 .market-data-title{
     font-size: 30px;
-    justify-content: center;
+    float:left;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Add borders to cells */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Add inner lines to cells */
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+/* Style the table header */
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Add some spacing between cells */
+td {
+    padding: 10px;
 }
 
 
