@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>SeatStock</title>
+        <link rel="stylesheet" href="static/style.css">
+        <script type="text/javascript" src="static/script.js"></script>
+
+
+    </head>
+    <body>
+        <!--************************   HEADER  ****************-->
+        <logo><a href="index.html">SeatStock</a></logo>
+        {% if session %}
+        <signinButton><a href="logout">({{ session.userinfo.name }}) Sign Out</a></signinButton>
+        {% else %}
+        <signinButton><a href="login">Sign In</a></signinButton>
+        {% endif %}
+        <faqButton><a href="static/FAQ.html">How it Works</a></faqButton>
+        <tixButton><a href="tickets.html">My Tickets</a></tixButton>
+
+
+
+        git commit --a "headerchanges and ticketchanges"
+
+         <!--************************  BODY  ****************-->
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
