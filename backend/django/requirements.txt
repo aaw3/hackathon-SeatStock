@@ -2,3 +2,4 @@ django ~= 4.0
 authlib ~= 1.0
 python-dotenv ~= 0.19
 requests ~= 2.27
+pymongo ~= 3.11
