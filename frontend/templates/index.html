@@ -13,7 +13,7 @@
         <!--************************   HEADER  ****************-->
         <logo><a href="/">SeatStock</a></logo>
         {% if session %}
-        <signinButton><a href="logout">({{ session.userinfo.name }}) Sign Out</a></signinButton>
+        <signinButton><a href="logout"><img height="24" width="24" src="{{ session.userinfo.picture }}"/> Sign Out</a></signinButton>
         {% else %}
         <signinButton><a href="login">Sign In</a></signinButton>
         {% endif %}
